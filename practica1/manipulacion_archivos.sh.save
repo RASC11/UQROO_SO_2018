@@ -1,0 +1,36 @@
+#!/bin/bash
+#Crear un archivo
+touch temp.txt
+
+#Editar el contenido de un archivo (ktemp.txt)
+#Se guarda la salida del comando "whoami"
+#dentro del archivo 
+whoami > temp.txt
+
+#Crear una nueva carpeta (whoamidir)
+mkdir whoamidir
+
+#Entrar a la carpeta whoamidir
+cd whoamidir
+
+#Copiar el archivo creado a la nueva carpeta con otro nombre
+#(whoami.txt)
+cp ../temp.txt whoami.txt
+
+
+
+#Editar de nuevo el contenido del archivo
+#(temp.txt)
+#Se guarda la salida del comando "ip address"
+#en el archivo temp.txt
+#Crear una nueva carpeta (networkinfo)
+#en /home/actica1
+#Mover el archivo con el nombre net-info.txt
+#a la carpeta networkinfo
+#Crear una carpeta "temp" en /home/practica1
+#Creamos un archivo temporal "temp.txt" en "temp"
+#Le ponemos un contenido a temp
+#Mostramos el contenido de temp.txt
+#Borramos el archivo temp
+#Borramos la carpeta temp
+#Fin de manipulacion de archivos
